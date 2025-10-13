@@ -1,0 +1,41 @@
+body {
+    color: var(--color-text);
+    background-color: var(--color-background-page);
+    margin: 0;
+    padding: 20px;
+}
+
+h1 {
+    background-color: var(--color-background-header);
+    color: var(--color-text-inverted);
+    padding: 16px;
+    margin: 0 0 20px 0;
+}
+
+h2 {
+    color: var(--color-accent);
+}
+
+a {
+    color: var(--color-link);
+}
+
+select {
+    margin-bottom: 20px;
+}
+
+table {
+    border-collapse: collapse;
+    background-color: white;
+}
+
+th {
+    background-color: var(--color-background-header);
+    color: var(--color-text-inverted);
+    padding: 8px;
+}
+
+td {
+    padding: 8px;
+    border: 1px solid lightgray;
+}
