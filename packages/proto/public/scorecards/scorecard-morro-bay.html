@@ -1,261 +1,261 @@
 <!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Morro Bay Golf Course Scorecard</title>
-  <meta name="description" content="Digital golf course scorecard for Morro Bay Golf Course. Enter player names, select tee, and track hole-by-hole scores with totals.">
-  <link rel="stylesheet" href="/styles/tokens.css"> 
-  <link rel="stylesheet" href="/styles/pages.css">
-</head>
-<body>
-  <h1>Scorecard for Morro Bay Golf Course</h1>
-
-  <p><button onclick="history.back()">Back</button></p>
-
-  <div id="course-info">
-    <p><strong>Par:</strong> 71/72</p>
-    <p><strong>Yards:</strong> 6361</p>
-    <p><strong>Rating:</strong> 71.0</p>
-    <p><strong>Slope:</strong> 123</p>
-  </div>
-
-  <div id="playing-with">
-    <h2>Playing With</h2>
-    <ul>
-      <li>
-        <label for="player-1-name"></label>
-        <input type="text" id="player-1-name" placeholder="Player 1 name">
-      </li>
-      <li>
-        <label for="player-2-name"></label>
-        <input type="text" id="player-2-name" placeholder="Player 2 name">
-      </li>
-      <li>
-        <label for="player-3-name"></label>
-        <input type="text" id="player-3-name" placeholder="Player 3 name">
-      </li>
-      <li>
-        <label for="player-4-name"></label>
-        <input type="text" id="player-4-name" placeholder="Player 4 name">
-      </li>
-    </ul>
-  </div>
-
-  <label for="tee-select">Select tee:</label>
-  <select id="tee-select" name="tee">
-    <option value="black">Black</option>
-    <option value="blue">Blue</option>
-    <option value="white">White</option>
-    <option value="gold">Gold</option>
-  </select>
-
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Hole</th>
-        <th>Yards</th>
-        <th>Par</th>
-        <th>Handicap</th>
-        <th>Score</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>1</td>
-        <td>497</td>
-        <td>5</td>
-        <td>7</td>
-        <td>
-          <label for="score-hole-1"></label>
-          <input type="number" id="score-hole-1" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>2</td>
-        <td>439</td>
-        <td>4</td>
-        <td>1</td>
-        <td>
-          <label for="score-hole-2"></label>
-          <input type="number" id="score-hole-2" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>3</td>
-        <td>316</td>
-        <td>4</td>
-        <td>15</td>
-        <td>
-          <label for="score-hole-3"></label>
-          <input type="number" id="score-hole-3" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>4</td>
-        <td>141</td>
-        <td>3</td>
-        <td>17</td>
-        <td>
-          <label for="score-hole-4"></label>
-          <input type="number" id="score-hole-4" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>5</td>
-        <td>315</td>
-        <td>4</td>
-        <td>11</td>
-        <td>
-          <label for="score-hole-5"></label>
-          <input type="number" id="score-hole-5" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>6</td>
-        <td>376</td>
-        <td>4</td>
-        <td>13</td>
-        <td>
-          <label for="score-hole-6"></label>
-          <input type="number" id="score-hole-6" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>7</td>
-        <td>337</td>
-        <td>4</td>
-        <td>5</td>
-        <td>
-          <label for="score-hole-7"></label>
-          <input type="number" id="score-hole-7" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>8</td>
-        <td>233</td>
-        <td>3</td>
-        <td>9</td>
-        <td>
-          <label for="score-hole-8"></label>
-          <input type="number" id="score-hole-8" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>9</td>
-        <td>440</td>
-        <td>4</td>
-        <td>3</td>
-        <td>
-          <label for="score-hole-9"></label>
-          <input type="number" id="score-hole-9" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>10</td>
-        <td>192</td>
-        <td>3</td>
-        <td>18</td>
-        <td>
-          <label for="score-hole-10"></label>
-          <input type="number" id="score-hole-10" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>11</td>
-        <td>334</td>
-        <td>4</td>
-        <td>16</td>
-        <td>
-          <label for="score-hole-11"></label>
-          <input type="number" id="score-hole-11" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>12</td>
-        <td>373</td>
-        <td>4</td>
-        <td>8</td>
-        <td>
-          <label for="score-hole-12"></label>
-          <input type="number" id="score-hole-12" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>13</td>
-        <td>438</td>
-        <td>4/5</td>
-        <td>2</td>
-        <td>
-          <label for="score-hole-13"></label>
-          <input type="number" id="score-hole-13" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>14</td>
-        <td>465</td>
-        <td>5</td>
-        <td>12</td>
-        <td>
-          <label for="score-hole-14"></label>
-          <input type="number" id="score-hole-14" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>15</td>
-        <td>347</td>
-        <td>4</td>
-        <td>14</td>
-        <td>
-          <label for="score-hole-15"></label>
-          <input type="number" id="score-hole-15" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>16</td>
-        <td>508</td>
-        <td>5</td>
-        <td>10</td>
-        <td>
-          <label for="score-hole-16"></label>
-          <input type="number" id="score-hole-16" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>17</td>
-        <td>231</td>
-        <td>3</td>
-        <td>6</td>
-        <td>
-          <label for="score-hole-17"></label>
-          <input type="number" id="score-hole-17" min="1" max="10" value="">
-        </td>
-      </tr>
-      <tr>
-        <td>18</td>
-        <td>379</td>
-        <td>4</td>
-        <td>4</td>
-        <td>
-          <label for="score-hole-18"></label>
-          <input type="number" id="score-hole-18" min="1" max="10" value="">
-        </td>
-      </tr>
-    </tbody>
-    <tfoot>
-    <tr>
-      <td>Course totals</td>
-      <td>6361</td>
-      <td>71/72</td>
-      <td>N/A</td>
-      <td>
-        <label for="total-score"></label>
-        <input type="number" id="total-score" min="1" max="10" value="">
-      </td>
-    </tr>
-    </tfoot>
-  </table>
-
-  <a href="../statistics.html">My Golf Statistics</a>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <title>Morro Bay Golf Course Scorecard</title>
+    <meta 
+      name="description" 
+      content="Digital golf course scorecard for Morro Bay Golf Course. Enter player names, select tee, and track hole-by-hole scores with totals." />
+    <link rel="stylesheet" href="/styles/tokens.css" /> 
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <h1>
+      <svg class="icon">
+        <use href="../icons/golf.svg#icon-golf-flag" />
+      </svg>
+      Scorecard for Morro Bay Golf Course
+    </h1>
+    <p><button onclick="history.back()">Back</button></p>
+    <div id="course-info">
+      <p><strong>Par:</strong> 71/72</p>
+      <p><strong>Yards:</strong> 6361</p>
+      <p><strong>Rating:</strong> 71.0</p>
+      <p><strong>Slope:</strong> 123</p>
+    </div>
+    <div id="playing-with">
+      <h2>Playing With</h2>
+      <ul>
+        <li>
+          <label for="player-1-name"></label>
+          <input type="text" id="player-1-name" placeholder="Player 1 name" />
+        </li>
+        <li>
+          <label for="player-2-name"></label>
+          <input type="text" id="player-2-name" placeholder="Player 2 name" />
+        </li>
+        <li>
+          <label for="player-3-name"></label>
+          <input type="text" id="player-3-name" placeholder="Player 3 name" />
+        </li>
+        <li>
+          <label for="player-4-name"></label>
+          <input type="text" id="player-4-name" placeholder="Player 4 name" />
+        </li>
+      </ul>
+    </div>
+    <label for="tee-select">Select tee:</label>
+    <select id="tee-select" name="tee">
+      <option value="black">Black</option>
+      <option value="blue">Blue</option>
+      <option value="white">White</option>
+      <option value="gold">Gold</option>
+    </select>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Hole</th>
+          <th>Yards</th>
+          <th>Par</th>
+          <th>Handicap</th>
+          <th>Score</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td>497</td>
+          <td>5</td>
+          <td>7</td>
+          <td>
+            <label for="score-hole-1"></label>
+            <input type="number" id="score-hole-1" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>439</td>
+          <td>4</td>
+          <td>1</td>
+          <td>
+            <label for="score-hole-2"></label>
+            <input type="number" id="score-hole-2" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>3</td>
+          <td>316</td>
+          <td>4</td>
+          <td>15</td>
+          <td>
+            <label for="score-hole-3"></label>
+            <input type="number" id="score-hole-3" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>4</td>
+          <td>141</td>
+          <td>3</td>
+          <td>17</td>
+          <td>
+            <label for="score-hole-4"></label>
+            <input type="number" id="score-hole-4" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>5</td>
+          <td>315</td>
+          <td>4</td>
+          <td>11</td>
+          <td>
+            <label for="score-hole-5"></label>
+            <input type="number" id="score-hole-5" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>6</td>
+          <td>376</td>
+          <td>4</td>
+          <td>13</td>
+          <td>
+            <label for="score-hole-6"></label>
+            <input type="number" id="score-hole-6" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>7</td>
+          <td>337</td>
+          <td>4</td>
+          <td>5</td>
+          <td>
+            <label for="score-hole-7"></label>
+            <input type="number" id="score-hole-7" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>8</td>
+          <td>233</td>
+          <td>3</td>
+          <td>9</td>
+          <td>
+            <label for="score-hole-8"></label>
+            <input type="number" id="score-hole-8" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>9</td>
+          <td>440</td>
+          <td>4</td>
+          <td>3</td>
+          <td>
+            <label for="score-hole-9"></label>
+            <input type="number" id="score-hole-9" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>10</td>
+          <td>192</td>
+          <td>3</td>
+          <td>18</td>
+          <td>
+            <label for="score-hole-10"></label>
+            <input type="number" id="score-hole-10" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>11</td>
+          <td>334</td>
+          <td>4</td>
+          <td>16</td>
+          <td>
+            <label for="score-hole-11"></label>
+            <input type="number" id="score-hole-11" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>12</td>
+          <td>373</td>
+          <td>4</td>
+          <td>8</td>
+          <td>
+            <label for="score-hole-12"></label>
+            <input type="number" id="score-hole-12" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>13</td>
+          <td>438</td>
+          <td>4/5</td>
+          <td>2</td>
+          <td>
+            <label for="score-hole-13"></label>
+            <input type="number" id="score-hole-13" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>14</td>
+          <td>465</td>
+          <td>5</td>
+          <td>12</td>
+          <td>
+            <label for="score-hole-14"></label>
+            <input type="number" id="score-hole-14" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>15</td>
+          <td>347</td>
+          <td>4</td>
+          <td>14</td>
+          <td>
+            <label for="score-hole-15"></label>
+            <input type="number" id="score-hole-15" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>16</td>
+          <td>508</td>
+          <td>5</td>
+          <td>10</td>
+          <td>
+            <label for="score-hole-16"></label>
+            <input type="number" id="score-hole-16" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>17</td>
+          <td>231</td>
+          <td>3</td>
+          <td>6</td>
+          <td>
+            <label for="score-hole-17"></label>
+            <input type="number" id="score-hole-17" min="1" max="10" value="" />
+          </td>
+        </tr>
+        <tr>
+          <td>18</td>
+          <td>379</td>
+          <td>4</td>
+          <td>4</td>
+          <td>
+            <label for="score-hole-18"></label>
+            <input type="number" id="score-hole-18" min="1" max="10" value="" />
+          </td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Course totals</td>
+          <td>6361</td>
+          <td>71/72</td>
+          <td>N/A</td>
+          <td>
+            <label for="total-score"></label>
+            <input type="number" id="total-score" min="1" max="10" value="" />
+          </td>
+        </tr>
+      </tfoot>
+    </table>
+    <a href="../statistics.html">My Golf Statistics</a>
+  </body>
 </html>

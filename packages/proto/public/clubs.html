@@ -1,176 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <link rel="stylesheet" href="/styles/tokens.css"> 
-  <link rel="stylesheet" href="/styles/pages.css">
-</head>
-<body>
-  <p><button onclick="history.back()">Back</button></p>
-
-  <h1>My Golf Clubs & Yardages</h1>
-
-  <table border="1">
-    <thead>
-      <tr>
-        <th>Clubs</th>
-        <th>Average Yardage</th>
-        <th>Notes</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td>Driver</td>
-        <td>
-          <label for="club-1"></label>
-          <input type="number" id="club-1" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-1-notes"></label>
-          <input type="text" id="club-1-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>3 Wood</td>
-        <td>
-          <label for="club-2"></label>
-          <input type="number" id="club-2" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-2-notes"></label>
-          <input type="text" id="club-2-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>5 Wood</td>
-        <td>
-          <label for="club-3"></label>
-          <input type="number" id="club-3" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-3-notes"></label>
-          <input type="text" id="club-3-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>4 Iron</td>
-        <td>
-          <label for="club-4"></label>
-          <input type="number" id="club-4" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-4-notes"></label>
-          <input type="text" id="club-4-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>5 Iron</td>
-        <td>
-          <label for="club-5"></label>
-          <input type="number" id="club-5" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-5-notes"></label>
-          <input type="text" id="club-5-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>6 Iron</td>
-        <td>
-          <label for="club-6"></label>
-          <input type="number" id="club-6" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-6-notes"></label>
-          <input type="text" id="club-6-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>7 Iron</td>
-        <td>
-          <label for="club-7"></label>
-          <input type="number" id="club-7" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-7-notes"></label>
-          <input type="text" id="club-7-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>8 Iron</td>
-        <td>
-          <label for="club-8"></label>
-          <input type="number" id="club-8" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-8-notes"></label>
-          <input type="text" id="club-8-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>9 Iron</td>
-        <td>
-          <label for="club-9"></label>
-          <input type="number" id="club-9" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-9-notes"></label>
-          <input type="text" id="club-9-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>Pitching Wedge</td>
-        <td>
-          <label for="club-10"></label>
-          <input type="number" id="club-10" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-10-notes"></label>
-          <input type="text" id="club-10-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>Gap Wedge</td>
-        <td>
-          <label for="club-11"></label>
-          <input type="number" id="club-11" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-11-notes"></label>
-          <input type="text" id="club-11-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>56 Degree Wedge</td>
-        <td>
-          <label for="club-12"></label>
-          <input type="number" id="club-12" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-12-notes"></label>
-          <input type="text" id="club-12-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>60 Degree Wedge</td>
-        <td>
-          <label for="club-13"></label>
-          <input type="number" id="club-13" min="0" max="400" value="">
-        </td>
-        <td>
-          <label for="club-13-notes"></label>
-          <input type="text" id="club-13-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-      <tr>
-        <td>Putter</td>
-        <td>N/A</td>
-        <td>
-          <label for="club-14-notes"></label>
-          <input type="text" id="club-14-notes" placeholder="Notes (optional)">
-        </td>
-      </tr>
-    </tbody>
-  </table>
-
-</body>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="/styles/tokens.css" /> 
+    <link rel="stylesheet" href="/styles/pages.css" />
+  </head>
+  <body>
+    <p><button onclick="history.back()">Back</button></p>
+    <h1>
+      <svg class="icon">
+        <use href="/icons/golf.svg#icon-golf-flag" />
+      </svg>
+      My Golf Clubs & Yardages
+    </h1>
+    <table border="1">
+      <thead>
+        <tr>
+          <th>Clubs</th>
+          <th>Average Yardage</th>
+          <th>Notes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Driver</td>
+          <td>
+            <label for="club-1"></label>
+            <input type="number" id="club-1" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-1-notes"></label>
+            <input type="text" id="club-1-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>3 Wood</td>
+          <td>
+            <label for="club-2"></label>
+            <input type="number" id="club-2" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-2-notes"></label>
+            <input type="text" id="club-2-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>5 Wood</td>
+          <td>
+            <label for="club-3"></label>
+            <input type="number" id="club-3" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-3-notes"></label>
+            <input type="text" id="club-3-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>4 Iron</td>
+          <td>
+            <label for="club-4"></label>
+            <input type="number" id="club-4" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-4-notes"></label>
+            <input type="text" id="club-4-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>5 Iron</td>
+          <td>
+            <label for="club-5"></label>
+            <input type="number" id="club-5" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-5-notes"></label>
+            <input type="text" id="club-5-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>6 Iron</td>
+          <td>
+            <label for="club-6"></label>
+            <input type="number" id="club-6" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-6-notes"></label>
+            <input type="text" id="club-6-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>7 Iron</td>
+          <td>
+            <label for="club-7"></label>
+            <input type="number" id="club-7" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-7-notes"></label>
+            <input type="text" id="club-7-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>8 Iron</td>
+          <td>
+            <label for="club-8"></label>
+            <input type="number" id="club-8" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-8-notes"></label>
+            <input type="text" id="club-8-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>9 Iron</td>
+          <td>
+            <label for="club-9"></label>
+            <input type="number" id="club-9" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-9-notes"></label>
+            <input type="text" id="club-9-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>Pitching Wedge</td>
+          <td>
+            <label for="club-10"></label>
+            <input type="number" id="club-10" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-10-notes"></label>
+            <input type="text" id="club-10-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>Gap Wedge</td>
+          <td>
+            <label for="club-11"></label>
+            <input type="number" id="club-11" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-11-notes"></label>
+            <input type="text" id="club-11-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>56 Degree Wedge</td>
+          <td>
+            <label for="club-12"></label>
+            <input type="number" id="club-12" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-12-notes"></label>
+            <input type="text" id="club-12-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>60 Degree Wedge</td>
+          <td>
+            <label for="club-13"></label>
+            <input type="number" id="club-13" min="0" max="400" value="" />
+          </td>
+          <td>
+            <label for="club-13-notes"></label>
+            <input type="text" id="club-13-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+        <tr>
+          <td>Putter</td>
+          <td>N/A</td>
+          <td>
+            <label for="club-14-notes"></label>
+            <input type="text" id="club-14-notes" placeholder="Notes (optional)" />
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
