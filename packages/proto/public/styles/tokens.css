@@ -1,11 +1,16 @@
 :root {
     --color-accent: rgb(34 102 68);
-  
     --color-background-page: rgb(230 240 230);
     --color-background-header: var(--color-accent);
-  
     --color-text: rgb(34 34 34);
     --color-text-inverted: rgb(255 255 255);
-  
     --color-link: rgb(25 80 50);
+    
+    --space-xs: 8px;
+    --space-sm: 12px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    
+    --content-max-width: 1200px;
 }
