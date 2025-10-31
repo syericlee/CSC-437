@@ -57,7 +57,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .course-card {
-    background-color: white;
+    background-color: var(--color-background-card);
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
@@ -73,7 +73,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .course-card .location {
-    color: #666;
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
     margin-bottom: var(--space-md);
 }
@@ -87,6 +87,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .course-card .stats {
+    color: var(--color-text-secondary);
     font-size: 0.9rem;
     margin-bottom: var(--space-md);
 }
@@ -109,7 +110,7 @@ body > ul {
 }
 
 body > ul > li {
-    background-color: white;
+    background-color: var(--color-background-card);
     padding: var(--space-md);
     margin-bottom: var(--space-sm);
     border-radius: 4px;
@@ -157,7 +158,7 @@ svg.icon {
 
 table {
     border-collapse: collapse;
-    background-color: white;
+    background-color: var(--color-background-card);
     width: 100%;
 }
 

@@ -10,12 +10,20 @@
     <link rel="stylesheet" href="/styles/pages.css" />
   </head>
   <body>
-    <h1>
-      <svg class="icon">
-        <use href="../icons/golf.svg#icon-golf-flag" />
-      </svg>
-      Scorecard for Morro Bay Golf Course
-    </h1>
+    <header class="page-header">
+      <h1>
+        <svg class="icon">
+          <use href="../icons/golf.svg#icon-golf-flag" />
+        </svg>
+        Scorecard for Morro Bay Golf Course
+      </h1>
+      <nav class="main-nav">
+        <label id="dark-mode-toggle">
+          <input type="checkbox" autocomplete="off" />
+          Dark mode
+        </label>
+      </nav>
+    </header>
     <p><button onclick="history.back()">Back</button></p>
     <div id="course-info">
       <p><strong>Par:</strong> 71/72</p>
@@ -256,5 +264,35 @@
         </tr>
       </tfoot>
     </table>
+    <script>
+      function relayEvent(event, newType, newDetail) {
+        event.stopPropagation();
+
+        const customEvent = new CustomEvent(newType, {
+          bubbles: true,
+          detail: newDetail
+        });
+
+        event.target.dispatchEvent(customEvent);
+      }
+
+      const darkModeLabel = document.getElementById('dark-mode-toggle');
+
+      darkModeLabel.onchange = function(event) {
+        if (event.target.type === 'checkbox') {
+          relayEvent(event, 'darkmode:toggle', {
+            checked: event.target.checked
+          });
+        }
+      };
+
+      document.body.addEventListener('darkmode:toggle', function(event) {
+        if (event.detail.checked) {
+          event.currentTarget.classList.add('dark-mode');
+        } else {
+          event.currentTarget.classList.remove('dark-mode');
+        }
+      });
+    </script>
   </body>
 </html>
