@@ -19,6 +19,16 @@
     <link rel="stylesheet" href="/styles/reset.css" />
     <link rel="stylesheet" href="/styles/tokens.css" />
     <link rel="stylesheet" href="/styles/pages.css" />
+    <script type="module">      
+      import { define } from "@calpoly/mustang";
+      import { GolfCourseElement } from "/src/golf-course.ts";
+      import { CourseListElement } from "/src/course-list.ts";
+
+      define({
+        "golf-course": GolfCourseElement,
+        "course-list": CourseListElement
+      });      
+    </script>
   </head>
   <body>
     <header class="page-header">
@@ -38,35 +48,7 @@
       </nav>
     </header>
     <div class="page-grid">
-      <ul class="course-list">
-        <li class="course-card">
-          <div class="course-info">
-            <h2>Morro Bay Golf Course</h2>
-            <p class="location">Location: Morro Bay, CA</p>
-            <img src="images/morro-bay.jpg" alt="Morro Bay Golf Course" class="course-image">
-            <p class="stats">Par: 71/72 | Yards: 6361 | Rating: 71.0 | Slope: 123</p>
-            <a href="scorecards/scorecard-morro-bay.html" class="btn-start">Start Round</a>
-          </div>
-        </li>
-        <li class="course-card">
-          <div class="course-info">
-            <h2>Paso Robles Golf Club</h2>
-            <p class="location">Location: Paso Robles, CA</p>
-            <img src="images/paso-robles.jpg" alt="Paso Robles Golf Club" class="course-image">
-            <p class="stats">Par: 70 | Yards: 6156 | Rating: 70.2 | Slope: 119</p>
-            <a href="scorecards/scorecard-paso-robles.html" class="btn-start">Start Round</a>
-          </div>
-        </li>
-        <li class="course-card">
-          <div class="course-info">
-            <h2>Hunter Ranch Golf Course</h2>
-            <p class="location">Location: Paso Robles, CA</p>
-            <img src="images/hunter-ranch.jpg" alt="Hunter Ranch Golf Course" class="course-image">
-            <p class="stats">Par: 72 | Yards: 6681 | Rating: 72.1 | Slope: 136</p>
-            <a href="scorecards/scorecard-hunter-ranch.html" class="btn-start">Start Round</a>
-          </div>
-        </li>
-      </ul>
+      <course-list src="/data/courses.json"></course-list>
     </div>
     <script>
       function relayEvent(event, newType, newDetail) {

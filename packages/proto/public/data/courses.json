@@ -1,0 +1,32 @@
+[
+    {
+        "name": "Morro Bay Golf Course",
+        "location": "Location: Morro Bay, CA",
+        "imgSrc": "/images/morro-bay.jpg",
+        "par": "71/72",
+        "yards": "6361",
+        "rating": "71.0",
+        "slope": "123",
+        "href": "/scorecards/scorecard-morro-bay.html"
+    },
+    {
+        "name": "Paso Robles Golf Club",
+        "location": "Location: Paso Robles, CA",
+        "imgSrc": "/images/paso-robles.jpg",
+        "par": "70",
+        "yards": "6156",
+        "rating": "70.2",
+        "slope": "119",
+        "href": "/scorecards/scorecard-paso-robles.html"
+    },
+    {
+        "name": "Hunter Ranch Golf Course",
+        "location": "Location: Paso Robles, CA",
+        "imgSrc": "/images/hunter-ranch.jpg",
+        "par": "72",
+        "yards": "6681",
+        "rating": "72.1",
+        "slope": "136",
+        "href": "/scorecards/scorecard-hunter-ranch.html"
+    }
+]

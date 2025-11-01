@@ -43,7 +43,7 @@ export class GolfCourseElement extends LitElement {
 
     static styles = [
         reset.styles,
-        css`
+        css`          
             .course-card {
                 background-color: var(--color-background-card);
                 border-radius: 8px;
